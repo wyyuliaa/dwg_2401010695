@@ -1,0 +1,245 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Global Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #7a5c3f, #a78d70); /* Gradient background for depth */
+    padding: 20px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    color: #fefefe; /* Gold color */
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for emphasis */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff; /* Change color to white on hover */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border-color: #fff; /* White border for toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for toggler icon */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon:hover {
+    background-color: #c6a17e; /* Brown color on hover */
+}
+
+/* Navbar Links */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin: 0 20px; /* Space between nav items */
+}
+
+.nav-link {
+    color: #fff; /* White color for links */
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover & Active States for Links */
+.nav-link:hover, .nav-link.active {
+    background-color: #f3f1f3; /* Gold background on hover */
+    color: #bd9875; /* Brown color for text on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Dropdown Menu (If any) */
+.nav-item.dropdown .dropdown-menu {
+    background-color: #7a5c3f; /* Darker brown for dropdown */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.nav-item.dropdown .dropdown-item {
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+    background-color: #ca8bb0;
+    color: #7a5c3f;
+}
+
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .navbar-brand {
+        font-size: 1.6rem; /* Adjust brand font size */
+    }
+
+    .nav-link {
+        font-size: 1.1rem; /* Smaller link font size */
+        padding: 10px 20px;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #7a5c3f; /* Make toggler icon match theme */
+    }
+}
+
+/* On Scroll Effects */
+.navbar.scrolled {
+    background: linear-gradient(135deg, #4e3d28, #b68e5f); /* Change gradient when scrolling */
+    padding: 15px 30px; /* Adjust padding on scroll */
+    transition: all 0.3s ease; /* Smooth scroll effect */
+}
+
+
+
+  /* Section Titles */
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #053568;
+    margin-bottom: 1rem;
+  }
+  
+  /* Slideshow */
+  #slideshow .carousel-inner img {
+    border-radius: 10px;
+  }
+  
+  #slideshow .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* Produk Grid */
+  #products .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  #products .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  #products .card-title {
+    font-size: 1.25rem;
+    color: #073363;
+  }
+  
+  #products .btn-primary {
+    background-color: #0056b3;
+    border: none;
+    transition: background-color 0.2s;
+  }
+  
+  #products .btn-primary:hover {
+    background-color: #003f82;
+  }
+  
+  /* Testimonial Styling */
+  #testimonials .p-3 {
+    background: linear-gradient(to right, #99968f, #ffffff);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  #testimonials h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: right;
+    color: #000000;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 50px;
+  }
+  
+  footer .btn-primary {
+    background-color: #a38d20;
+    border: none;
+  }
+  
+  footer .btn-primary:hover {
+    background-color: #a1d293;
+  }
+  
+  #carouselExample {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .carousel-inner img {
+    height: 500px; 
+    object-fit: cover;
+  }
+
+
+  /* Ensure all product cards have the same size */
+#products .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Allow card content to stack vertically */
+    height: 100%; /* Ensures the card fills the available space */
+}
+
+#products .card-body {
+    flex-grow: 1; /* Makes the body take available space, ensuring uniformity */
+}
+
+#products .card-title, .card-text, .btn {
+    margin-bottom: 15px;
+}
+
+#products .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#products .btn-primary {
+    background-color: #0056b3;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+#products .btn-primary:hover {
+    background-color: #003f82;
+}
